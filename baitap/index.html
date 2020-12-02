@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+    <style>
+        .container {
+            justify-content: center;
+            display: flex;
+            height: 500px;
+        }
+
+        .row {
+            margin: auto
+            
+        }
+
+        .ip {
+            padding: 10px;
+            border-radius: 8px;
+            outline: none;
+            border: 1px solid #c145e0 ;
+        }
+
+        .btn {
+            margin-left: 10px;
+            padding: 10px 10px;
+            border-radius: 8px;
+            outline: none;
+            background-color: unset;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid #c145e0 ;
+        }
+        .btn:hover {
+            background: linear-gradient(140deg, #c145e0, #8056e2);
+            box-shadow: 0px 6px 20px -8px #9225f0;
+            color: #fff;
+        }
+        .err {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <input class="ip" id="input"  placeholder="Nhập số">
+            <button class="btn"onclick="renderIP()">Gửi</button>
+            <p id="err" class="err"></p>
+        </div>
+    </div>
+</body>
+<script src="./style.js"></script>
+
+</html>
